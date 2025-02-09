@@ -1,0 +1,691 @@
+:root{
+    --rip:rgb(255, 0, 0);
+    --bip:rgb(19, 17, 17);
+    --wip:white;
+    --gip:gray;
+    --1er:.5em;
+    --2er:1em;
+    --3er:1.5em;
+    --4er:2em;
+    --5er:2.5em;
+    --6er:3em;
+}
+*{
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Margin */
+.mt-1{
+    margin-top:var(--1er);
+}
+.mt-2{
+    margin-top: var(--2er);
+}
+.mt-3{
+    margin-top:var(--3er) ;
+}
+.mt-4{
+    margin-top:var(--4er) ;
+}
+.mt-5{
+    margin-top: var(--5er);
+}
+.mt-6{
+    margin-top: var(--6er);
+}
+.mb-0{
+    margin-bottom: 0px;
+}
+.mb-1{
+    margin-bottom:var(--1er) ;
+}
+.mb-2{
+    margin-bottom:var(--2er) ;
+}
+.mb-3{
+    margin-bottom: var(--3er);
+}
+.mb-4{
+    margin-bottom: var(--4er);
+}
+.mb-5{
+    margin-bottom: var(--5er);
+}
+.mb-6{
+    margin-bottom:var(--6er) ;
+}
+.mr-1{
+    margin-right:var(--1er) ;
+}
+.mr-2{
+    margin-right:var(--2er) ;
+}
+.mr-3{
+    margin-right: var(--3er);
+}
+.mr-4{
+    margin-right: var(--4er) ;
+}
+.mr-5{
+    margin-right:var(--5er) ;
+}
+.mr-6{
+    margin-right:var(--6er) ;
+}
+.ml-1{
+    margin-left: var(--1er);
+}
+.ml-2{
+    margin-left:var(--2er) ;
+}
+.ml-3{
+    margin-left:var(--3er) ;
+}
+.ml-4{
+    margin-left:  var(--4er);
+}
+.ml-5{
+    margin-left: var(--5er);
+}
+.ml-6{
+    margin-left:var(--6er) ;
+}
+/* Padding */
+.pt-1{
+    padding-top:var(--1er) ;
+}
+.pt-2{
+    padding-top:var(--2er) ;
+}
+.pt-3{
+    padding-top: var(--3er);
+}
+.pt-4{
+    padding-top: var(--4er) ;
+}
+.pt-5{
+    padding-top:var(--5er) ;
+}
+.pt-6{
+    padding-top: var(--6er);
+}
+.pb-1{
+    padding-bottom:var(--1er) ;
+}
+.pb-2{
+    padding-bottom:var(--2er) ;
+}
+.pb-3{
+    padding-bottom:var(--3er) ;
+}
+.pb-4{
+    padding-bottom: var(--4er) ;
+}
+.pb-5{
+    padding-bottom:var(--5er) ;
+}
+.pb-6{
+    padding-bottom:var(--6er) ;
+}
+.pr-1{
+    padding-right:var(--1er) ;
+}
+.pr-2{
+    padding-right: var(--2er);
+}
+.pr-3{
+    padding-right: var(--3er);
+}
+.pr-4{
+    padding-right: var(--4er) ;
+}
+.pr-5{
+    padding-right:var(--5er) ;
+}
+.pr-6{
+    padding-right:var(--6er) ;
+}
+.pl-1{
+    padding-left:var(--1er) ;
+}
+.pl-2{
+    padding-left:var(--2er) ;
+}
+.pl-3{
+    padding-left: var(--3er);
+}
+.pl-4{
+    padding-left:  var(--4er);
+}
+.pl-5{
+    padding-left:var(--5er) ;
+}
+.pl-6{
+    padding-left: var(--6er);
+}
+.px{
+    padding:0 var(--5er);
+}
+.py{
+    padding:var(--5er) 0 ;
+}
+.pz{
+    padding: var(--5er);
+}
+.r{
+    margin-right:100px;
+}
+.l{
+    margin-left:100px;
+}
+.m-all{
+    margin:2%;
+}
+.p-all{
+    padding:2%;
+}
+/* Coloring */
+.lor-b{
+    color:var(--bip);
+}
+.lor-g{
+    color:var(--gip);
+}
+.lor-r{
+    color:var(--rip);
+}
+.lor-w{
+    color:var(--wip);
+}
+.bg-b{
+    background:var(--bip) ;
+}
+.bg-w{
+    background:var(--wip) ;
+}
+.bg-g{
+    background:var(--gip) ;
+}
+.bg-r{
+    background: var(--rip);
+}
+/* Border */
+.border{
+    border: 1px solid black;
+}
+.border-n{
+    border:none;
+}
+/* Alignment */
+.alig{
+    text-align:center;
+
+}
+.alig-end{
+    text-align: right;
+}
+.flexi{
+    display:flex;
+    flex-wrap: wrap;
+}
+.siz1{
+    font-size: var(--1er);
+}
+.siz2{
+    font-size: var(--2er);
+}
+.siz3{
+    font-size: var(--3er);
+}
+.siz4{
+    font-size: var(--4er);
+}
+.siz5{
+    font-size: var(--5er);
+}
+.siz6{
+    font-size: var(--6er);
+   font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Layouting */
+header{
+    width:100%;
+    height:100px;
+    box-shadow:0 0 40px rgb(222, 65, 65) ;
+    position:sticky;
+    top: 0;
+    z-index: 9999;
+}
+h3{
+    font-family:calibri light;
+    text-decoration:2px underline solid black;
+}
+.bg-light{
+    background: #c7c4c4cc;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+  font-size: var(--2er);
+}
+
+.icn{
+width:50px;
+height:100px;
+}
+
+.name{
+   
+
+    text-transform: uppercase;
+
+}
+.name::before{
+    content: "MEDI";
+    font-size: var(--3er);
+    color: gray;
+    font-weight: bold;
+
+}
+.name::after{
+    content:"CARE";
+    font-size: var(--3er);
+    color: rgb(255, 4, 0);
+    font-weight: bold;
+}
+.mylin ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+.mylin ul li a{
+    padding:10px 10px;
+    text-align: center;
+    text-decoration: none;
+    color:var(--gip);
+    text-transform: capitalize;
+     
+}
+ .mylin ul li a.active{
+    
+   line-height:30px;
+    position: relative;
+   color: var(--bip);
+    padding: 12px;
+    padding-left: 30px;
+    
+    
+    
+ }
+ .mylin ul li a:hover{
+    color: var(--bip);
+ }
+ .social ul{
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
+ }
+ .bor{
+    
+    text-decoration:2px underline solid rgb(235, 20, 20) ;
+    
+ }
+ .font{
+    font-family: calibri light;
+ }
+ .social ul li{
+    width:50px;
+    height:50px;
+    background: #f1f1f189;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 50px;
+    margin: 0 10px;
+ }
+ .social ul li a{
+    color:var(--rip);
+ }
+ .adver{
+width:100%;
+height:150vh;
+padding:5%;
+background: url(op1.jpeg);
+background-size: cover;
+ }
+ .adver.row{
+    margin-top:80px;
+    
+
+ }
+ .adver.row.col-md-6{
+    position: relative;
+    left:50px;
+ }
+.hj{
+    font-weight: bold;
+}
+ .container{
+    width:100%;
+    height:95vh;
+ }
+ .usa{
+    width:100%;
+    height:200px;
+    box-shadow: 0 0 30px var(--gip);
+ }
+ .f{
+    background: url(doctors.jpeg);
+  
+ }
+ .g{
+    background: url(box-02.jpg);
+    
+ }
+ .h{
+    background: url(box-03.jpg);
+ }
+ .i{
+    background: url(box-04.jpg);
+ }
+ .lsa{
+    width:100%;
+    height:350px;
+    box-shadow: 0 0 30px var(--gip);
+ }
+ .ff{
+    background:rgb(255, 0, 0);
+    padding:5%;
+ }
+ .line{
+    width:50px;
+    height:5px;
+    background: red;
+    position:absolute;
+    margin-left: 30px;
+ }
+ .btn:hover{
+    cursor: pointer;
+    background: #f1f1f189 !important;
+    color:blueviolet;
+ }
+ .gg{
+    background:rgba(128, 4, 4, 0.957);
+    padding:5%;
+    
+ }
+ .hh{
+    background:var(--rip);
+    padding:5%;
+    
+ }
+ .ii{
+    background:rgba(0, 0, 0, 0.799);
+    padding:5%;
+   
+ }
+ 
+ 
+ .toip{
+    margin-top:100px;
+    
+ }
+ .pl-8{
+    padding-left: 80%;
+ }
+ .lmao{
+    width:35%;
+    height:1000px;
+    background: url(Doctor-scaled.jpg);
+    background-size: cover;
+ }
+ .intro{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .cv{
+    width:22%;
+    height:100vh;
+ }
+ .io{
+    width: 100%;
+    height:40vh;
+    background: url(hd-1.jpeg);
+ }
+ .iop{
+    width: 100%;
+    height:40vh;
+    background: url(hd-2.jpeg);
+ }
+ .ioq{
+    width: 100%;
+    height:40vh;
+    background: url(hd-3.jpeg);
+ }
+ .iot{
+    width: 100%;
+    height:40vh;
+    background: url(hd-4.jpeg);
+ }
+ .lko{
+    width:100%;
+    height:50vh;
+    background: #f1f1f1cb;
+ }
+ .m-r-l{
+    margin:10% 20%;
+   
+ }
+ .help{
+    width:100%;
+    height:120vh;
+
+ }
+ .testimonials{
+    width:100%;
+    height: 700px;
+    background: var(--rip);
+ }
+.update{
+    width:100%;
+    height: 1000px;
+    background: var(--wip);
+ }
+ .loi{
+    width:40%;
+    height:1000px;
+    background:url(f-doc.jpg);
+ }
+.notify{
+    width:60%;
+    background: var(--wip);
+    height:1000px;
+}
+.map-1{
+    width:100%;
+height:650px;
+    background: url(map.png);
+}
+.contact{
+    background:var(--rip);
+    height:300px;
+}
+.tip{
+    border: 2px solid gray;
+    height:300px;
+    box-shadow: 0 0 30px rgb(196, 196, 196);
+}
+.mit{
+    height:300px;
+
+}
+.pro{
+    width:35%;
+    background: var(--bip);
+    height:600px;
+    box-shadow: 0 0 40px rgb(41, 41, 41) ;
+}
+.iou{
+    width:100%;
+    height:100px;
+    box-shadow: 0 0 40px --wip;
+    background: var(--wip);
+    position: relative;
+    z-index:auto ;
+}
+.mylan ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+
+}
+.mylan ul li a{
+    padding:10px 8px;
+    
+    text-decoration: none;
+    color:var(--wip);
+    text-transform: capitalize;
+    font-size: medium;
+}
+ .mylan ul li a.act{
+    
+    text-decoration:5px underline solid red;
+    color: var(--bip);
+   
+    padding-left: 10px;
+    
+ }
+ .mylan ul li a:hover{
+    color: var(--bip);
+ }
+ .porp{
+    width:60%;
+    height:200px;
+    background: url(poc0.jpeg);
+ }
+ .uto{
+    width:60%;
+    height:200px;
+    background: url(poc1.jpeg);
+ }
+ .puo{
+    width:60%;
+    height:200px;
+    background: url(poc.jpeg);
+ }
+ .b-l{
+    border-left: 2px solid rgb(174, 174, 174);
+ }
+
+.tyt{
+    z-index: auto;
+    position: relative;
+    margin-left: 40%;
+}
+ 
+.siz-p{
+    text-decoration: 1px underline solid rgb(19, 18, 18);
+    
+    font-size: var(--6er);
+}
+.siz-p::before{
+    content: "Patient";
+    color: white;
+}
+.siz-p::after{
+    content: "testimonials";
+    padding-left: 2px;
+}
+.p-i{
+    padding-left: 30%;
+}
+.koi{
+    width:50%;
+    height:150px;
+    border-radius: 120%;
+    background: url(testi0.jpeg);
+    
+}
+.koj{
+    width:50%;
+    height:150px;
+    border-radius: 120%;
+    background: url(testi1.jpeg);
+    
+}
+.kot{
+    width:50%;
+    height:150px;
+    border-radius: 120%;
+    background: url(testi2.jpeg);
+    
+}
+.kom{
+    width:50%;
+    height:150px;
+    border-radius: 120%;
+    background: url(tetsti3.jpeg);
+    
+}
+.name12{
+    font-size:var(--6er);
+    
+}
+.name12::before{
+    content:" Medicare";
+    
+
+}
+.name12::after{
+    content: "updates";
+    color:red;
+}
+
+.pop{
+    width:347px;
+    height:280px;
+    background: url(blog1.jpg);
+
+}
+.popk{
+    width:353px;
+    height:280px;
+    background: url(blog2.jpg);
+}
+.popl{
+    width:353px;
+    height:280px;
+    background:url(blog3.jpg);
+}
+.col-md-3{
+    overflow: hidden;
+}
+.btn1{
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+  font-size: var(--2er);
+}
+.nup:hover{
+    cursor: pointer;
+}
